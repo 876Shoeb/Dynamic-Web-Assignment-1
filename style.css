@@ -51,3 +51,15 @@ div {
     border-radius: 5px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
+
+.text {
+    font-weight: normal;  /* Default font weight */
+    color: black;  /* Default text color */
+    transition: all 0.3s ease;  /* Smooth transition effect */
+  }
+
+  /* .text: hover {
+    
+    font-weight bold;  /* Change to bold on hover */
+    /* color: blue;   //Change color on :hover
+  } */ 

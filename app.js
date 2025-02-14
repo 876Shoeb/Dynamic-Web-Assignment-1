@@ -26,7 +26,7 @@ function ShowResult() {
     }
   
   function colorChange() {
-      const elementTextarea =document.getElementsByTagName("Text area") 
+      const elementTextarea =document.getElementsByTagName("textarea") 
       const elementParagraph =document.getElementsByTagName("p") 
      
    const elementColor =["#fff000","#ff00ff", "#e1a2ff"]
@@ -139,17 +139,7 @@ function ShowResult() {
   
   
   
-    .text {
-      font-weight: normal;  /* Default font weight */
-      color: black;  /* Default text color */
-      transition: all 0.3s ease;  /* Smooth transition effect */
-    }
-  
-    .text: hover {
-      
-      font-weight bold;  /* Change to bold on hover */
-      color: blue;  /* Change color on hover */
-    }
+
   
   
   
