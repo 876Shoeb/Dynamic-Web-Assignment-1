@@ -159,10 +159,6 @@ function ShowResult() {
 
   
   
-      // Define your array
-      const myArray = ['mango', 'soursop', 'jackfruit', 'coconut','pineapple','jimbilin','breadfruit','guava'];
-  
-      // Get the Last item of the array
       const lastItem = myArray[myArray.length - 1];
   
       // Display the last item inside the paragraph
