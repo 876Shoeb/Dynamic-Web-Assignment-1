@@ -124,7 +124,7 @@ function ShowResult() {
   
       
       window.onload = function() {
-          document.getElementById("image").src = "Pitbull-a.jpg";
+          document.getElementById("image").src = "Pitbull-a";
       };
         
   let paragraphs = document.getElementsByTagName("p");
@@ -133,7 +133,7 @@ function ShowResult() {
                   this.style.color = "#FF0000";
               };
               p.onmouseout = function() {
-                  this.style.color = "#FFFF00";
+                  this.style.color = "#070302";
               };
           }
   
@@ -159,6 +159,10 @@ function ShowResult() {
 
   
   
+      // Define your array
+      const myArray = ['mango', 'soursop', 'jackfruit', 'coconut','pineapple','jimbilin','breadfruit','guava'];
+  
+      // Get the Last item of the array
       const lastItem = myArray[myArray.length - 1];
   
       // Display the last item inside the paragraph
