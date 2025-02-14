@@ -156,11 +156,7 @@ function ShowResult() {
   
     });
   
-  
-  
-  
-  <p id="demo"> JavaScript array elements are accessed using numeric indexes (starting
-      from 0).</p>
+
   
   
       // Define your array
