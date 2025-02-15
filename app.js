@@ -1,3 +1,5 @@
+
+// Question 1
 function ShowResult() {
     let x= document.getElementById("x").value;
     let y= document.getElementById("y").value;
@@ -8,22 +10,22 @@ function ShowResult() {
     };
     
   
-  
-  
-  
-           function Rally(){
+    
+//   Question 2
+ function Rally(){
   
                  let firstName, lastName, age;
   
                   firstName = prompt("Please enter your first name: ");
                   lastName = prompt("Please enter your last name: ");
                   age = prompt("Please enter your age: ");
-                 console.log("Please enter your first name:") 
+                 console.log("Please enter your name:") 
                  
-                 alert(`Your name is ${firstName} " " ${lastName}" " Your age is ${age}`);
-                 
+                 alert(`Your name is ${firstName} " " ${lastName}" " Your age is ${age}`);         
                  
     }
+
+//    Question 3 
   
   function colorChange() {
       const elementTextarea =document.getElementsByTagName("textarea") 
@@ -40,7 +42,7 @@ function ShowResult() {
   }
   }
   
-  
+//  Question 4 
   const paratext= `A dynamic website generates content in real time \n and responds to users' actions and preferences. \n Dynamic websites can customize content, retrieve data from \n
   databases, and offer interactive features.`;
   
@@ -48,54 +50,33 @@ function ShowResult() {
    document.getElementById("paratext").innerHTML= paratext ;
   document.getElementById("paratext").style.backgroundColor= "#FF0000";
   
+
+//   Question 5 
   
-  
-               /*letnewparagraph = document.createElement('p');
-                 
-                // JavaScript code to append text using template literals
-                 const name = "Oneil Foster";
-                 const age = 45;
-                 const city = "Jamaica";
-  
-       
-                const paragraph = `Hello, my name is ${name}. I am ${age} years old and I live in ${city}.`;
-          
-  
-                  //Appending the paragraph to the div with id "content"
-                  document.getElementById("paragraph").innerHTML = paragraph;*/
-  
-  
-  
-  
-  
-  
-  function changeColors() {
-  
-  document.getElementById("targetparagraph").style.color = 'red'; //storing element in variable
-  let ptag = document.getElementById("targetparagraph");
-  
-  calling.getElementById
-  ptag.style.color = "red";
-  ptag.style.backgroundColor = "purple";
-  
+  function changeFontStyle() {
+
+ const elementTargetparahraph = document.getElementById("targetparagraph");
+  document.getElementById("targetparagraph2").style.color = "Green"; 
+  document.getElementById("targetparagraph2").style.fontFamily = "Calibre";
+  document.getElementById("targetparagraph2").style.fontSize = "Larger";
+
+  document.getElementById("btn1").addEventListener("click", changeFontStyle);
   }
   
   
-      
-     document.getElementById("btn1").addEventListener("click", changeColors) ;
-          
+    //   Question 6 
      
   function changeColors() {
   
   let tutorialList = document.getElementsByClassName("tutorial");
   for(let i = 0; i < tutorialList.length; i++){
-  tutorialList[i].style.backgroundColor = "blue";
+  tutorialList[i].style.backgroundColor = "Yellow";
   }
-  
+  document.getElementById("effect").addEventListener("click", changeEffect);
   };
   
   
-  
+//   Question 7
   
   
       function displayMessage() {
@@ -110,13 +91,11 @@ function ShowResult() {
           } else {
                    messageDiv.innerText = "You select option 3!";
               
-          }
-  
-  
+          } 
       }    
   
   
-    
+    // Question 8
     
       //function changeImage() {
       //   document.getElementById("image").src = "Pitbull.jpg"
@@ -139,11 +118,7 @@ function ShowResult() {
   
   
   
-
-  
-  
-  
-  
+// Question 9
     
       
     // Select the button and the paragraph
