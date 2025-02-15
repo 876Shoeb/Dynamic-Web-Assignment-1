@@ -168,3 +168,62 @@ function ShowResult() {
     // Call the function to execute the logic
     extractAndDisplayStyleContent();
     
+
+    /*
+    Question 8
+
+    
+  
+    
+    window.onload = function() {
+        document.getElementById("image").src = "image/Pitbull-a.jpg";
+    };
+      Question 7
+
+      
+
+
+
+    function displayMessage() {
+        const selectedOption = document.getElementById("dropdown").value;
+        const messageP = document.getElementById("message");
+
+        // Change the message based on the selection
+        switch(selectedOption){
+            case "option1" :
+
+            messageP.innerText = "You selected Option 1!";
+            break;
+        
+        case "option2": 
+                messageP.innerText = "You selected Option 2!";
+                break;
+            case "option3":
+                 messageP.innerText = "You selected option 3!";
+                 break;
+
+        default :
+                messageP.innerText = "No value has been selected!";
+                break;
+
+        }
+
+
+    }   
+        
+    Question 9
+
+    let quest9Div = document.getElementById("quest9Div");
+
+let displayDocStyle = quest9Div.querySelector("#demo");
+
+let docStyle = window.getComputedStyle(document.body);
+
+let styleList = { "Background" : docStyle.backgroundColor,
+    "AccentColor" : docStyle.accentColor, "Padding" : docStyle.padding};
+
+Object.entries(styleList).forEach(([key, value]) => {
+    displayDocStyle.innerHTML += `<ul><li>${key} : ${value}</ul></li>`;
+});
+
+Question 
