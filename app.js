@@ -109,84 +109,14 @@ function displayMessage() {
 }  
   
     // Question 8
-    
-      //function changeImage() {
-      //   document.getElementById("image").src = "Pitbull.jpg"
-      //   document.getElementById("image2").src ="Pitbull-a.jpg"  } 
-  
       
-      window.onload = function() {
-          document.getElementById("image").src = "image/Pitbull-a";
-      };
+      document.getElementById('changeImageButton').addEventListener('click', function() {
+        document.getElementById('image').src = 'mountain.jpg';
+      });
+      
 
   
   
-// Question 9
-    
-let quest9Div = document.getElementById("quest9Div");
 
-let displayDocStyle = quest9Div.querySelector("#demo");
-
-let docStyle = window.getComputedStyle(document.body);
-
-let styleList = { "Background" : docStyle.backgroundColor,
-    "AccentColor" : docStyle.accentColor, "Padding" : docStyle.padding};
-
-Object.entries(styleList).forEach(([key, value]) => {
-    displayDocStyle.innerHTML += `<ul><li>${key} : ${value}</ul></li>`;
-});
-  
-
-  // Question 10
-
-
-let p = document.getElementsById("p");
-  document.getElementById("p").addEventListener("mouseover", mouseOver);
-document.getElementById("p").addEventListener("mouseout", mouseOut);
-function mouseOver() {
-    document.getElementById("p").style.color = "red";
-  }
-  
-  function mouseOut() {
-    document.getElementById("p").style.color = "black";
-  }
-  
-
-  //Question 11
-  
-      // Define your array
-      const myArray = ['mango', 'soursop', 'jackfruit', 'coconut','pineapple','jimbilin','breadfruit','guava'];
-  
-      // Get the Last item of the array
-      const lastItem = myArray[myArray.length - 1];
-  
-      // Display the last item inside the paragraph
-      document.getElementById('demo').textContent = lastItem;
-  
-      function extractAndDisplayStyleContent() {
-        // Find the first <style> element in the document
-        const styleElement = document.querySelector('style');
-    
-        if (styleElement) {
-            // Get the text content of the <style> element
-            const styleContent = styleElement.textContent;
-    
-            // Find the <p> element with ID "demo"
-            const demoParagraph = document.getElementById('demo');
-    
-            if (demoParagraph) {
-                // Display the extracted CSS inside the <p> element
-                demoParagraph.textContent = styleContent;
-            } else {
-                console.warn('No element with ID "demo" found.');
-            }
-        } else {
-            console.warn('No <style> element found in the document.');
-        }
-    }
-    
-    // Call the function to execute the logic
-    extractAndDisplayStyleContent();
-    
 
   

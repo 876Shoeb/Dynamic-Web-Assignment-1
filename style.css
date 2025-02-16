@@ -30,9 +30,6 @@ div {
 
 
 
-h1 {
-    text-align: center;
-}
 
 p {
     color: rgb(6, 8, 10);
@@ -52,6 +49,33 @@ height: 100px;
 
   }
 
+  #ptag {
+    color: black;
+  }
+  
+  #ptag:hover {
+    color: red;
+  }
+
+  #changeFont {
+    position: relative;
+    color: black;
+    font-weight: normal;
+    transition: color 0.3s, font-weight 0.3s;
+  }
+  
+  #changeFont::before {
+    content: attr(data-text);
+    position: absolute;
+    visibility: hidden;
+    font-weight: bold;
+  }
+  
+  #changeFont:hover {
+    color: red;
+    font-weight: bold;
+  }
+  
   
 
   /* .text: hover {
