@@ -51,41 +51,21 @@ function ShowResult() {
   document.getElementById("paratext").style.backgroundColor= "#FF0000";
   
   
+//Question 5
   
-               /*letnewparagraph = document.createElement('p');
-                 
-                // JavaScript code to append text using template literals
-                 const name = "Oneil Foster";
-                 const age = 45;
-                 const city = "Jamaica";
+  function changeFontStyle() {
   
-       
-                const paragraph = `Hello, my name is ${name}. I am ${age} years old and I live in ${city}.`;
-          
-  
-                  //Appending the paragraph to the div with id "content"
-                  document.getElementById("paragraph").innerHTML = paragraph;*/
-  
-  
-  
-  
-  
-  
-  function changeColors() {
-  
-  document.getElementById("targetparagraph").style.color = 'red'; //storing element in variable
-  let ptag = document.getElementById("targetparagraph");
-  
-  calling.getElementById
-  ptag.style.color = "red";
-  ptag.style.backgroundColor = "purple";
+  document.getElementById("targetparagraph2").style.color = "Yellow";
+document.getElementById("targetparagraph2").style.fontFamily = "cursive";
+document.getElementById("targetparagraph2").style.fontSize = "x-large";
+  document.getElementById("effect").addEventListener("click", changeEffect);
   
   }
   
   
       
-     document.getElementById("btn1").addEventListener("click", changeColors) ;
-          
+   
+ // Question 6    
      
   function changeColors() {
   
@@ -93,28 +73,40 @@ function ShowResult() {
   for(let i = 0; i < tutorialList.length; i++){
   tutorialList[i].style.backgroundColor = "Yellow";
   }
-  document.getElementById("effect").addEventListener("click", changeEffect);
+  document.getElementById("btn1").addEventListener("click", changeColors) ;
+ 
   };
   
   
 //   Question 7
   
   
-      function displayMessage() {
-          const selectedOption = document.getElementById("dropdown").value;
-          const messageDiv = document.getElementById("message");
-  
-          // Change the message based on the selection
-          if (selectedOption === "option1") {
-              messageDiv.innerText = "You selected Option 1!";
-          } else if (selectedOption === "option2") {
-              messageDiv.innerText = "You selected Option 2!";
-          } else {
-                   messageDiv.innerText = "You select option 3!";
-              
-          } 
-      }    
-  
+function displayMessage() {
+    const selectedOption = document.getElementById("dropdown").value;
+    const messageP = document.getElementById("message");
+
+    // Change the message based on the selection
+    switch(selectedOption){
+        case "Option1" :
+
+        messageP.innerText = "You selected Option 1!";
+        break;
+    
+    case "Option2": 
+            messageP.innerText = "You selected Option 2!";
+            break;
+        case "Option3":
+             messageP.innerText = "You selected Option 3!";
+             break;
+
+    default :
+            messageP.innerText = "No value has been selected!";
+            break;
+
+    }
+
+
+}  
   
     // Question 8
     
@@ -124,36 +116,43 @@ function ShowResult() {
   
       
       window.onload = function() {
-          document.getElementById("image").src = "Pitbull-a";
+          document.getElementById("image").src = "image/Pitbull-a";
       };
-        
-  let paragraphs = document.getElementsByTagName("p");
-          for (let p of paragraphs) {
-              p.onmouseover = function() {
-                  this.style.color = "#FF0000";
-              };
-              p.onmouseout = function() {
-                  this.style.color = "#070302";
-              };
-          }
-  
+
   
   
 // Question 9
     
-      
-    // Select the button and the paragraph
-    const removeButton = document.getElementById("myfunction");
-    const paragraph = document.getElementById("demo");
-  
-    // Add an event listener to the button
-    removeButton.addEventListener("click" , () => {
-      paragraph.remove(); // This removes the paragraph
-  
-    });
+let quest9Div = document.getElementById("quest9Div");
+
+let displayDocStyle = quest9Div.querySelector("#demo");
+
+let docStyle = window.getComputedStyle(document.body);
+
+let styleList = { "Background" : docStyle.backgroundColor,
+    "AccentColor" : docStyle.accentColor, "Padding" : docStyle.padding};
+
+Object.entries(styleList).forEach(([key, value]) => {
+    displayDocStyle.innerHTML += `<ul><li>${key} : ${value}</ul></li>`;
+});
   
 
   // Question 10
+
+
+let p = document.getElementsById("p");
+  document.getElementById("p").addEventListener("mouseover", mouseOver);
+document.getElementById("p").addEventListener("mouseout", mouseOut);
+function mouseOver() {
+    document.getElementById("p").style.color = "red";
+  }
+  
+  function mouseOut() {
+    document.getElementById("p").style.color = "black";
+  }
+  
+
+  //Question 11
   
       // Define your array
       const myArray = ['mango', 'soursop', 'jackfruit', 'coconut','pineapple','jimbilin','breadfruit','guava'];
@@ -190,61 +189,4 @@ function ShowResult() {
     extractAndDisplayStyleContent();
     
 
-    /*
-    Question 8
-
-    
   
-    
-    window.onload = function() {
-        document.getElementById("image").src = "image/Pitbull-a.jpg";
-    };
-      Question 7
-
-      
-
-
-
-    function displayMessage() {
-        const selectedOption = document.getElementById("dropdown").value;
-        const messageP = document.getElementById("message");
-
-        // Change the message based on the selection
-        switch(selectedOption){
-            case "option1" :
-
-            messageP.innerText = "You selected Option 1!";
-            break;
-        
-        case "option2": 
-                messageP.innerText = "You selected Option 2!";
-                break;
-            case "option3":
-                 messageP.innerText = "You selected option 3!";
-                 break;
-
-        default :
-                messageP.innerText = "No value has been selected!";
-                break;
-
-        }
-
-
-    }   
-        
-    Question 9
-
-    let quest9Div = document.getElementById("quest9Div");
-
-let displayDocStyle = quest9Div.querySelector("#demo");
-
-let docStyle = window.getComputedStyle(document.body);
-
-let styleList = { "Background" : docStyle.backgroundColor,
-    "AccentColor" : docStyle.accentColor, "Padding" : docStyle.padding};
-
-Object.entries(styleList).forEach(([key, value]) => {
-    displayDocStyle.innerHTML += `<ul><li>${key} : ${value}</ul></li>`;
-});
-
-Question 
