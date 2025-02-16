@@ -50,21 +50,42 @@ function ShowResult() {
    document.getElementById("paratext").innerHTML= paratext ;
   document.getElementById("paratext").style.backgroundColor= "#FF0000";
   
-
-//   Question 5 
   
-  function changeFontStyle() {
-
- const elementTargetparahraph = document.getElementById("targetparagraph");
-  document.getElementById("targetparagraph2").style.color = "Green"; 
-  document.getElementById("targetparagraph2").style.fontFamily = "Calibre";
-  document.getElementById("targetparagraph2").style.fontSize = "x-large";
-
-  document.getElementById("btn1").addEventListener("click", changeFontStyle);
+  
+               /*letnewparagraph = document.createElement('p');
+                 
+                // JavaScript code to append text using template literals
+                 const name = "Oneil Foster";
+                 const age = 45;
+                 const city = "Jamaica";
+  
+       
+                const paragraph = `Hello, my name is ${name}. I am ${age} years old and I live in ${city}.`;
+          
+  
+                  //Appending the paragraph to the div with id "content"
+                  document.getElementById("paragraph").innerHTML = paragraph;*/
+  
+  
+  
+  
+  
+  
+  function changeColors() {
+  
+  document.getElementById("targetparagraph").style.color = 'red'; //storing element in variable
+  let ptag = document.getElementById("targetparagraph");
+  
+  calling.getElementById
+  ptag.style.color = "red";
+  ptag.style.backgroundColor = "purple";
+  
   }
   
   
-    //   Question 6 
+      
+     document.getElementById("btn1").addEventListener("click", changeColors) ;
+          
      
   function changeColors() {
   
@@ -168,3 +189,62 @@ function ShowResult() {
     // Call the function to execute the logic
     extractAndDisplayStyleContent();
     
+
+    /*
+    Question 8
+
+    
+  
+    
+    window.onload = function() {
+        document.getElementById("image").src = "image/Pitbull-a.jpg";
+    };
+      Question 7
+
+      
+
+
+
+    function displayMessage() {
+        const selectedOption = document.getElementById("dropdown").value;
+        const messageP = document.getElementById("message");
+
+        // Change the message based on the selection
+        switch(selectedOption){
+            case "option1" :
+
+            messageP.innerText = "You selected Option 1!";
+            break;
+        
+        case "option2": 
+                messageP.innerText = "You selected Option 2!";
+                break;
+            case "option3":
+                 messageP.innerText = "You selected option 3!";
+                 break;
+
+        default :
+                messageP.innerText = "No value has been selected!";
+                break;
+
+        }
+
+
+    }   
+        
+    Question 9
+
+    let quest9Div = document.getElementById("quest9Div");
+
+let displayDocStyle = quest9Div.querySelector("#demo");
+
+let docStyle = window.getComputedStyle(document.body);
+
+let styleList = { "Background" : docStyle.backgroundColor,
+    "AccentColor" : docStyle.accentColor, "Padding" : docStyle.padding};
+
+Object.entries(styleList).forEach(([key, value]) => {
+    displayDocStyle.innerHTML += `<ul><li>${key} : ${value}</ul></li>`;
+});
+
+Question 
